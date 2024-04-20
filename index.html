@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entre Bigolin e a concorrência, faça a escolha que realmente faz a diferença. Opte pela qualidade superior da Bigolin e descubra por que não há concorrente à altura do nosso padrão de excelência!</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    #container {
+        max-width: 800px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    h1 {
+        color: #333;
+    }
+    #subtitle {
+        font-size: 16px;
+        color: #666;
+        margin-top: 20px;
+    }
+    #logo1, #logo2 {
+        width: 200px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+    #logo2:hover {
+        transform: scale(1.1);
+    }
+    #logo2 {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+    }
+    #logo1-container {
+        margin-top: 6cm; /* Margem de 3cm para mover o botão para baixo */
+    }
+</style>
+<script>
+    function moveLogo() {
+        var logo2 = document.getElementById('logo2');
+        var maxX = window.innerWidth - logo2.offsetWidth;
+        var maxY = window.innerHeight - logo2.offsetHeight;
+        var newX = Math.max(0, Math.min(maxX, Math.random() * window.innerWidth));
+        var newY = Math.max(0, Math.min(maxY, Math.random() * window.innerHeight));
+        logo2.style.left = newX + 'px';
+        logo2.style.top = newY + 'px';
+    }
+</script>
+</head>
+<body>
+
+<div id="container">
+    <h1>Entre Bigolin e a concorrência, faça a escolha que realmente faz a diferença. Opte pela qualidade superior da Bigolin e descubra por que não há concorrente à altura do nosso padrão de excelência!</h1>
+    <div id="subtitle">Faça sua escolha clicando na imagem</div>
+    <div id="logo1-container">
+        <a href="https://www.canva.com/design/DAGCnYIGKm4/apNWkrYxOmLxmLepkkPGYQ/edit?utm_content=DAGCnYIGKm4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><img src="logo1.png" alt="Biogolin" id="logo1"></a>
+    </div>
+    <img src="logo2.png" alt="Concôrrencia" id="logo2" onmouseover="moveLogo()">
+</div>
+
+</body>
+</html>
